@@ -1,11 +1,9 @@
 <script setup>
-import Layout from './components/Layout.vue';
 import { RouterView, RouterLink } from 'vue-router';
 </script>
 
 <template>
-
-  <div id="app">
+ <div id="app">
     <nav>
       <ul>
         <li>
@@ -16,17 +14,10 @@ import { RouterView, RouterLink } from 'vue-router';
         </li>
       </ul>
     </nav>
-  </div>
 
-  <main class="p-8">
-
-  </main>
-
-  <h1 class="text-3xl font-bold underline text-red-500 ">
+    <Layout>
+      <RouterView />
+    </Layout>
     
-  </h1>
-  <Layout>
-    <RouterView />
-  </Layout>
+  </div>
 </template>
-
